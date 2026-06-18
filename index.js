@@ -3,6 +3,7 @@ const path = require("path");
 const app = express();
 
 app.use(express.json());
+app.use(express.static("public"));
 
 app.get("/students", (req, res) =>{
     res.json([
